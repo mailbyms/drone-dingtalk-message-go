@@ -84,6 +84,11 @@ func main() {
 			EnvVar: "DRONE_COMMIT_AUTHOR",
 		},
 		cli.StringFlag{
+			Name:   "commit.tag",
+			Usage:  "providers the tag name (if event is tag)",
+			EnvVar: "DRONE_TAG",
+		},
+		cli.StringFlag{
 			Name:   "commit.branch",
 			Usage:  "providers the branch for the current build",
 			EnvVar: "DRONE_COMMIT_BRANCH",
@@ -133,6 +138,11 @@ func main() {
 			Name:   "repo.owner",
 			Usage:  "provider the owner of the repository",
 			EnvVar: "DRONE_REPO_OWNER",
+		},
+		cli.StringFlag{
+			Name:   "stage.name",
+			Usage:  "providers the stage name, or in this case, pipeline name",
+			EnvVar: "DRONE_STAGE_NAME",
 		},
 		cli.Uint64Flag{
 			Name:   "stage.started",
@@ -277,6 +287,7 @@ func run(c *cli.Context) {
 			Stage: Stage{
 				StartedAt:  c.Uint64("stage.started"),
 				FinishedAt: c.Uint64("stage.finished"),
+				Name: c.String("stage.name"),
 			},
 		},
 		//  custom config

@@ -48,6 +48,7 @@ type (
 	Stage struct {
 		StartedAt  uint64
 		FinishedAt uint64
+		Name string // stage name or just pipeline name  # MIKE
 	}
 
 	// CommitAuthor commit author info
@@ -338,6 +339,8 @@ func (p *Plugin) getEnvs() map[string]interface{} {
 	envs["TPL_AUTHOR_USERNAME"] = p.Drone.Commit.Author.Username
 	envs["TPL_AUTHOR_EMAIL"] = p.Drone.Commit.Author.Email
 	envs["TPL_AUTHOR_AVATAR"] = p.Drone.Commit.Author.Avatar
+
+	envs["TPL_STAGE_NAME"] = p.Drone.Stage.Name
 
 	envs["TPL_STATUS_PIC"] = p.getPicURL()
 	envs["TPL_STATUS_COLOR"] = p.getColor()
