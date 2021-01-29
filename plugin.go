@@ -334,6 +334,7 @@ func (p *Plugin) getEnvs() map[string]interface{} {
 	if p.Tpl.Commit.Branch != "" {
 		envs["TPL_COMMIT_BRANCH"] = p.Tpl.Commit.Branch
 	}
+	envs["TPL_COMMIT_TAG"] = p.Drone.Commit.Tag
 
 	envs["TPL_AUTHOR_NAME"] = p.Drone.Commit.Author.Name
 	envs["TPL_AUTHOR_USERNAME"] = p.Drone.Commit.Author.Username

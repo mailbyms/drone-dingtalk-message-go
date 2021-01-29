@@ -277,6 +277,7 @@ func run(c *cli.Context) {
 				Branch:  c.String("commit.branch"),
 				Message: c.String("commit.message"),
 				Link:    c.String("commit.link"),
+				Tag: 	 c.String("commit.tag"),
 				Author: CommitAuthor{
 					Avatar:   c.String("commit.author.avatar"),
 					Email:    c.String("commit.author.email"),
