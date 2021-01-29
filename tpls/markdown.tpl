@@ -1,4 +1,4 @@
-### [TPL_REPO_SHORT_NAME] build [TPL_BUILD_STATUS] (`takes [TPL_BUILD_CONSUMING]s`)
+### <font color=[TPL_STATUS_COLOR]> [TPL_REPO_FULL_NAME] build [TPL_BUILD_STATUS] (`takes [TPL_BUILD_CONSUMING]s`) </font>
 
 Event:[TPL_BUILD_EVENT]
 
