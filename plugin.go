@@ -41,6 +41,7 @@ type (
 		Message string //  providers the commit message for the current build
 		Sha     string //  providers the commit sha for the current build
 		Ref     string //  commit ref
+		Tag		string //  tag version, if git event is tag // MIKE
 		Author  CommitAuthor
 	}
 
