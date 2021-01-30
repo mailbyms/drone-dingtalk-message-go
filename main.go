@@ -92,7 +92,7 @@ func main() {
 			Name:   "commit.branch",
 			Usage:  "providers the branch for the current build",
 			EnvVar: "DRONE_COMMIT_BRANCH",
-			Value:  "master",
+			//Value:  "master",
 		},
 		cli.StringFlag{
 			Name:   "commit.link",
