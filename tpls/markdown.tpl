@@ -2,9 +2,9 @@
 
 **Event**: [TPL_BUILD_EVENT] ~ [TPL_COMMIT_TAG][TPL_COMMIT_BRANCH]
 
-**Stage**: [TPL_STAGE_NAME]
+**Stage**: `[TPL_STAGE_NAME]`
 
-**Message**: [TPL_COMMIT_MSG]
+**Message**: ``[TPL_COMMIT_MSG]``
 
 **Detail**: [[TPL_COMMIT_SHA]]([TPL_COMMIT_LINK])
 
