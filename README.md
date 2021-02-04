@@ -36,4 +36,4 @@ steps:
 PC 版钉钉，点击主界面左上角的用户图像 -> `机器人管理` -> `自定义`，填写相关信息，钉钉会提示 webhook 的地址，如：`
 https://oapi.dingtalk.com/robot/send?access_token=aabbccddeewf`  
 其中，是 `access_token` 参数就对应 上面的 `dingtalk_token`  
-![image.png](https://i.loli.net/2021/02/04/vaNUCKkqHltBVxM.png)
+![image.png](https://i.loli.net/2021/02/04/BrI9dP1DRFWNVb8.png)
