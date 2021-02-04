@@ -8,7 +8,8 @@
 
 根据项目需要，修改了 markdown 消息的模板  
 - 标题颜色：成功和失败分别用绿色和红色区分
-- 标题中的 repo 改成 full_repo
+- 标题中的 repo 改成 full_repo  
+
 ![image.png](https://i.loli.net/2021/02/04/5YvmTtlykrEHDQO.png)
 
 
