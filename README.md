@@ -37,3 +37,36 @@ PC 版钉钉，点击主界面左上角的用户图像 -> `机器人管理` -> `
 https://oapi.dingtalk.com/robot/send?access_token=aabbccddeewf`  
 其中，是 `access_token` 参数就对应 上面的 `dingtalk_token`  
 ![image.png](https://i.loli.net/2021/02/04/BrI9dP1DRFWNVb8.png)
+
+### 开发注意
+钉钉的 markdown 消息，只支持如下[语法](https://developers.dingtalk.com/document/app/develop-enterprise-internal-robots/title-mno-3qd-5f9)：
+```
+标题
+# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+ 
+引用
+> A man who stands for nothing will fall for anything.
+ 
+文字加粗、斜体
+**bold**
+*italic*
+ 
+链接
+[this is a link](https://www.dingtalk.com/)
+ 
+图片
+![](http://name.com/pic.jpg)
+ 
+无序列表
+- item1
+- item2
+ 
+有序列表
+1. item1
+2. item2
+```

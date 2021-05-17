@@ -10,4 +10,8 @@
 
 **Author**: [[TPL_AUTHOR_NAME]([TPL_AUTHOR_EMAIL])](mailto:[TPL_AUTHOR_EMAIL])
 
-[Click To The Build Detail Page [TPL_STATUS_EMOTICON]]([TPL_BUILD_LINK])
+          🐬
+
+🌊🌊⛵🌊🌊🌊🌊⁣🌊🌊
+
+[Click To View Build Details]([TPL_BUILD_LINK]) 
