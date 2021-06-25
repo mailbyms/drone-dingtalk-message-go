@@ -10,8 +10,8 @@
 
 **Author**: [[TPL_AUTHOR_NAME]([TPL_AUTHOR_EMAIL])](mailto:[TPL_AUTHOR_EMAIL])
 
-          🐬
+          [TPL_STATUS_EMOJI_SKY]
 
-🌊🌊⛵🌊🌊🌊🌊⁣🌊🌊
+[TPL_STATUS_EMOJI_LAND]
 
 [Click To View Build Details]([TPL_BUILD_LINK]) 

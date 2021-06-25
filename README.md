@@ -10,7 +10,7 @@
 - 标题颜色：成功和失败分别用绿色和红色区分
 - 标题中的 repo 改成 full_repo  
 
-![image.png](https://i.loli.net/2021/02/04/5YvmTtlykrEHDQO.png)
+![image](https://user-images.githubusercontent.com/16809751/121153678-d891da00-c878-11eb-9494-da584f43d075.png)
 
 
 ### 使用说明
@@ -35,8 +35,8 @@ steps:
 
 PC 版钉钉，点击主界面左上角的用户图像 -> `机器人管理` -> `自定义`，填写相关信息，钉钉会提示 webhook 的地址，如：`
 https://oapi.dingtalk.com/robot/send?access_token=aabbccddeewf`  
-其中，是 `access_token` 参数就对应 上面的 `dingtalk_token`  
-![image.png](https://i.loli.net/2021/02/04/BrI9dP1DRFWNVb8.png)
+其中，此 `access_token` 参数就对应 上面的 `dingtalk_token`  
+![image](https://user-images.githubusercontent.com/16809751/121153859-02e39780-c879-11eb-9ae5-ded0ddbd82e5.png)
 
 ### 开发注意
 钉钉的 markdown 消息，只支持如下[语法](https://developers.dingtalk.com/document/app/develop-enterprise-internal-robots/title-mno-3qd-5f9)：
@@ -69,4 +69,11 @@ https://oapi.dingtalk.com/robot/send?access_token=aabbccddeewf`
 有序列表
 1. item1
 2. item2
+```
+
+### 本地调试
+修改本 github 的 docker-compose.yml 文件里面的参数，使用 `docker-compose up` 即可发送消息：  
+```
+PLUGIN_TOKEN：设置为上面 access_token 的值
+DRONE_BUILD_STATUS：设置为 failure 或者 success
 ```

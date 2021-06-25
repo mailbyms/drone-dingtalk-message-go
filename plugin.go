@@ -178,7 +178,7 @@ func (p *Plugin) Exec() error {
 	}
 
 	if p.Config.TipsTitle == "" {
-		p.Config.TipsTitle = "you have a new message"
+		p.Config.TipsTitle = p.getStatus() + ": " + p.Drone.Repo.ShortName
 	}
 
 	newWebHook := webhook.NewWebHook(p.Config.AccessToken)
@@ -347,6 +347,8 @@ func (p *Plugin) getEnvs() map[string]interface{} {
 	envs["TPL_STATUS_PIC"] = p.getPicURL()
 	envs["TPL_STATUS_COLOR"] = p.getColor()
 	envs["TPL_STATUS_EMOTICON"] = p.getEmoticon()
+	envs["TPL_STATUS_EMOJI_SKY"] = p.getEmojiSky()
+	envs["TPL_STATUS_EMOJI_LAND"] = p.getEmojiLand()
 
 	return envs
 }
@@ -434,4 +436,32 @@ func (p *Plugin) getColor() string {
 	}
 
 	return ""
+}
+
+// get emoji show in the sky
+func (p *Plugin) getEmojiSky() string {
+	emojis := make(map[string]string)
+	emojis["success"] = "🐬"
+	emojis["failure"] = "🐝"
+
+	emoji, ok := emojis[p.Drone.Build.Status]
+	if ok {
+		return emoji
+	}
+
+	return "☀️"
+}
+
+// get emoji show on land
+func (p *Plugin) getEmojiLand() string {
+	emojis := make(map[string]string)
+	emojis["success"] = "🌊🌊⛵🌊🌊🌊🌊⁣🌊"
+	emojis["failure"] = "🌵🌵🌵🌵🌵🏠🌵🌵"
+
+	emoji, ok := emojis[p.Drone.Build.Status]
+	if ok {
+		return emoji
+	}
+
+	return "👿👿👿👿👿👿👿👿"
 }
