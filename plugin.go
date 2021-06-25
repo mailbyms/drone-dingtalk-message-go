@@ -178,7 +178,7 @@ func (p *Plugin) Exec() error {
 	}
 
 	if p.Config.TipsTitle == "" {
-		p.Config.TipsTitle = p.getStatus() + ": " + p.Drone.Repo.ShortName
+		p.Config.TipsTitle = p.getStatus() + " in " + p.Drone.Repo.ShortName
 	}
 
 	newWebHook := webhook.NewWebHook(p.Config.AccessToken)
