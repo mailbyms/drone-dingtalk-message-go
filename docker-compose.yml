@@ -15,7 +15,7 @@ services:
       DRONE_STAGE_NAME: first_stage
       DRONE_STAGE_STARTED: 12
       DRONE_STAGE_FINISHED: 100
-      #DRONE_COMMIT_AUTHOR: mailbyms
+      #DRONE_COMMIT_AUTHOR_NAME: mailbyms
       DRONE_COMMIT_AUTHOR_EMAIL: mailbyms@mail.com
       DRONE_COMMIT_MESSAGE: helloworld
       DRONE_COMMIT_SHA: f8cdef227237a2179fbbc45cee21a1d4a28d5511

@@ -66,7 +66,7 @@ func main() {
 		cli.StringFlag{
 			Name:   "commit.author.username",
 			Usage:  "providers the author username for the current commit",
-			EnvVar: "DRONE_COMMIT_AUTHOR",
+			EnvVar: "DRONE_COMMIT_AUTHOR_NAME",
 		},
 		cli.StringFlag{
 			Name:   "commit.author.avatar",
@@ -81,7 +81,7 @@ func main() {
 		cli.StringFlag{
 			Name:   "commit.author.name",
 			Usage:  "providers the author name for the current commit",
-			EnvVar: "DRONE_COMMIT_AUTHOR",
+			EnvVar: "DRONE_COMMIT_AUTHOR_NAME",
 		},
 		cli.StringFlag{
 			Name:   "commit.tag",

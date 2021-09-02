@@ -8,7 +8,7 @@
 
 **Detail**: [[TPL_COMMIT_SHA]]([TPL_COMMIT_LINK])
 
-**Author**: [[TPL_AUTHOR_NAME]([TPL_AUTHOR_EMAIL])](mailto:[TPL_AUTHOR_EMAIL])
+**Author**: [TPL_AUTHOR_EMAIL]
 
           [TPL_STATUS_EMOJI_SKY]
 
