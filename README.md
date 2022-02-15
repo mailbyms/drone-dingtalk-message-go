@@ -1,6 +1,6 @@
 
 
-[TOC]
+# 注意：项目因不支持 windows 编译成 docker 镜像，已废弃，改成自实现的 Java 项目 https://github.com/mailbyms/drone-dingtalk-message
 
 ### 修改说明
 代码来自 [lddsb/drone-dingtalk-message](https://github.com/lddsb/drone-dingtalk-message) 
